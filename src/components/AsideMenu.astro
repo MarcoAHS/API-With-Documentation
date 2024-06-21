@@ -1,0 +1,9 @@
+---
+const documentationPages = ["employees", "departments"]
+---
+<a href="/"><h2 class=" text-center font-bold mt-4 border-solid border-b-purple-600 border-b-2 rounded-md p-2">Documentacion</h2></a>
+<ul class="flex flex-col justify-center items-center gap-4 mt-2">{
+    documentationPages.map(page => (
+        <a href={`/${page}`} class="cursor-pointer font-semibold hover:bg-purple-400 w-11/12 text-center rounded-md py-2">{page}</a>
+    ))
+}</ul>
