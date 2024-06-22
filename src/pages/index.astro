@@ -1,10 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 
-<Layout title="Employees API">
-	<div></div>
+<Layout title="Anime API">
+	<div class="w-full flex flex-col justify-center items-center mt-4 font-bold">
+		<h2 class="font-bold text-2xl text-white">Main Page</h2>
+		<main class="w-8/12 flex flex-col items-center gap-6">
+			<h4 class="font-bold text-xl text-white">About the Project</h4>
+			<p class="text-white font-bold text-xl text-pretty">Build with the porpuse of learn/practice Data Structures and Data Manipulation.</p>
+			<p class="text-white font-bold text-xl text-pretty">On each of the Left SideBar elements you will find an explanation of an Endpoint/Parameter for that Endpoint, bear in mind that this is a micro-service only destined to use it for Developer Porpuses so the Data Set is small.</p>
+			<p class="text-white font-bold text-xl text-pretty">Done By Marco Antonio, using Astro</p>
+		</main>
+	</div>
 </Layout>
 
 <style>
@@ -16,52 +23,5 @@ import Card from '../components/Card.astro';
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
 	}
 </style>

@@ -1,9 +1,26 @@
 ---
-const documentationPages = ["employees", "departments"]
+const documentationPages = [
+    {
+        title: "Animes",
+        url: "/animes"
+    },
+    {
+        title: "Animes by Category",
+        url: "/animesbycategory"
+    },
+    {
+        title: "Order By # of Seasons",
+        url: "/animesbyseasons"
+    }, 
+    {
+        title: "Order By # of Chapters",
+        url: "/animesbychapters"
+    }
+]
 ---
-<a href="/"><h2 class=" text-center font-bold mt-4 border-solid border-b-purple-600 border-b-2 rounded-md p-2">Documentacion</h2></a>
+<a href="/"><h2 class="text-center font-bold mt-4 border-solid border-b-fuchsia-500 border-b-2 rounded-md p-2">Documentacion</h2></a>
 <ul class="flex flex-col justify-center items-center gap-4 mt-2">{
     documentationPages.map(page => (
-        <a href={`/${page}`} class="cursor-pointer font-semibold hover:bg-purple-400 w-11/12 text-center rounded-md py-2">{page}</a>
+        <a href={`${page.url}`} class="transition-all duration-100 cursor-pointer font-semibold hover:text-fuchsia-500 hover:border-b hover:border-b-fuchsia-500 w-[50%] text-center p-2">{page.title}</a>
     ))
 }</ul>

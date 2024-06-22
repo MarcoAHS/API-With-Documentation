@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Endpoint GetAllAnimes Documentation">
+	<div class="w-full flex flex-col justify-center items-center mt-4 font-black">
+		<h2 class="font-bold text-4xl text-white">Get All Anime Documentation</h2>
+		<main class="w-8/12 flex flex-col items-center gap-6">
+			<h4 class="font-bold text-3xl text-white text-pretty text-center">EndPoint to Get All Anime on the DB sorted by Chapters</h4>
+            <p class="text-white font-bold text-md text-pretty text-center">You can also sortered it by total of chapters <a target="_blank" href="/api/animes.json?chapters=ASC"><code>chapters=ASC</code></a> or <a target="_blank" href="/api/animes.json?chapters=DESC"><code>chapters=DESC</code></a>
+        </main>
+	</div>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+    code{
+        background-color: #343434;
+        padding: .25rem .25rem;
+        font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+        font-size: 0.833rem;
+    }
+</style>
