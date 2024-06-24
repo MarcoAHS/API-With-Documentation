@@ -19,9 +19,9 @@ export async function GET ({ params, request}) {
     }
     if(chapters){
         if(chapters.toUpperCase() === "ASC"){
-            finalResponse = finalResponse.sort((a, b) => a.temporadas - b.temporadas)
+            finalResponse = finalResponse.sort((a, b) => a.episodios - b.episodios)
         } else if(chapters.toUpperCase() === "DESC"){
-            finalResponse = finalResponse.sort((a, b) => b.temporadas - a.temporadas)
+            finalResponse = finalResponse.sort((a, b) => b.episodios - a.episodios)
         } else {
             return new Response(JSON.stringify({message: "Parameter 'Chapters' incorrect"}), {
                 headers: { "contend-type": "application/json" },
