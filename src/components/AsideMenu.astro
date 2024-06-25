@@ -1,26 +1,51 @@
 ---
+const current = Astro.url.pathname
 const documentationPages = [
     {
         title: "Animes",
-        url: "/animes"
+        url: "/animes",
+        class: current == "/animes" ? "text-fuchsia-500 border-b-fuchsia-500 border-b" : "",
     },
     {
         title: "Animes by Category",
-        url: "/animesbycategory"
+        url: "/animesbycategory",
+        class: current == "/animesbycategory" ? "text-fuchsia-500 border-b-fuchsia-500 border-b" : ""
     },
     {
         title: "Order By # of Seasons",
-        url: "/animesbyseasons"
+        url: "/animesbyseasons",
+        class: current == "/animesbyseasons" ? "text-fuchsia-500 border-b-fuchsia-500 border-b" : ""
     }, 
     {
         title: "Order By # of Chapters",
-        url: "/animesbychapters"
+        url: "/animesbychapters",
+        class: current == "/animesbychapters" ? "text-fuchsia-500 border-b-fuchsia-500 border-b" : ""
+    },
+    {
+        title: "Get all Characters",
+        url: "/characters",
+        class: current == "/characters" ? "text-fuchsia-500 border-b-fuchsia-500 border-b" : ""
+    },
+    {
+        title: "Get a Random Character",
+        url: "/randomCharacter",
+        class: current == "/randomCharacter" ? "text-fuchsia-500 border-b-fuchsia-500 border-b" : ""
+    },
+    {
+        title: "An specific Anime with its Characters",
+        url: "/animeAndCharacters",
+        class: current == "/animeAndCharacters" ? "text-fuchsia-500 border-b-fuchsia-500 border-b" : ""
+    } ,
+    {
+        title: "A Random Anime with its Characters",
+        url: "/randomAnimeWithCharacters",
+        class: current == "/randomAnimeWithCharacters" ? "text-fuchsia-500 border-b-fuchsia-500 border-b" : ""
     }
 ]
 ---
-<a href="/"><h2 class="text-center font-bold mt-4 border-solid border-b-fuchsia-500 border-b-2 rounded-md p-2">Documentacion</h2></a>
-<ul class="flex flex-col justify-center items-center gap-4 mt-2">{
+<a class="sticky top-0 mt-4" href="/"><h2 class="text-center font-bold border-solid border-b-fuchsia-500 border-b-2 rounded-md p-2">Documentacion</h2></a>
+<ul class="flex flex-col justify-center items-center gap-4 mt-2 overflow-auto">{
     documentationPages.map(page => (
-        <a href={`${page.url}`} class="transition-all duration-100 cursor-pointer font-semibold hover:text-fuchsia-500 hover:border-b hover:border-b-fuchsia-500 w-[50%] text-center p-2">{page.title}</a>
+        <a href={`${page.url}`} class=`${page.class} transition-all duration-100 cursor-pointer font-semibold hover:text-fuchsia-500 hover:border-b hover:border-b-fuchsia-500 w-[50%] text-center p-2`>{page.title}</a>
     ))
 }</ul>

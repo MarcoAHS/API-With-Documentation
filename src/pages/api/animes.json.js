@@ -1,10 +1,10 @@
-import { Animes, Anime } from "../../data/data"
+import { Animes } from "../../data/data"
 export async function GET ({ params, request}) {
     const url = new URL(request.url)
+    let finalResponse = [...Animes].flat()
     const category = url.searchParams.get('category')
     const seasons = url.searchParams.get('seasons')
     const chapters = url.searchParams.get('chapters')
-    let finalResponse = Animes
     if(seasons){
         if(seasons.toUpperCase() === "ASC"){
             finalResponse = finalResponse.sort((a, b) => a.temporadas - b.temporadas)
@@ -30,7 +30,7 @@ export async function GET ({ params, request}) {
         }
     }
     if(category){
-        finalResponse = finalResponse.filter(anime => !(anime.categorys.indexOf(category) === -1))
+        finalResponse = Animes.filter(anime => !(anime.categorys.indexOf(category) === -1))
     }
     if(finalResponse.length === 0){
         return new Response(JSON.stringify({message: "Theres no Animes with that Category"}), {

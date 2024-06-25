@@ -79,6 +79,36 @@ export const Animes: Anime[] = [
         temporadas: 1,
         episodios: 24,
         peliculas: 0
+    },
+    {
+        id: 8,
+        name: "Given",
+        description: "The series follows a group of four students in an amateur rock band and the dual romantic relationships that form among them: between electric guitarist Ritsuka Uenoyama and vocalist Mafuyu Satō, and between bassist Haruki Nakayama and drummer Akihiko Kaji.",
+        categorys: [category.drama, category.romance],
+        cover: "https://static.wikia.nocookie.net/given/images/b/b7/Anime_Poster.jpg/revision/latest?cb=20201121210250",
+        temporadas: 1,
+        episodios: 11,
+        peliculas: 1
+    },
+    {
+        id: 9,
+        name: "Haikyuu",
+        description: "Is a volleyball themed anime series about Shoyo Hinata a kid who loves volleyball. Hinata is starting at Karasuno High School and joins their team. As fate would have it, his middle school volleyball rival, Tobio Kageyama also joins.",
+        categorys: [category.sports, category.comedy, category.shounen],
+        cover: "https://m.media-amazon.com/images/I/71PbOGKldmS._AC_UF894,1000_QL80_.jpg",
+        temporadas: 4,
+        episodios: 85,
+        peliculas: 4
+    },
+    {
+        id: 10,
+        name: "Sousou no Frieren",
+        description: "The story follows elven mage Frieren, a former member of the party of adventurers who defeated the Demon King and restored harmony to the world after a ten-year quest. In the past, the heroic group included Frieren, human hero Himmel, dwarven warrior Eisen, and human priest Heiter.",
+        categorys: [category.adventure],
+        cover: "https://m.media-amazon.com/images/M/MV5BMjVjZGU5ZTktYTZiNC00N2Q1LThiZjMtMDVmZDljN2I3ZWIwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        temporadas: 1,
+        episodios: 28,
+        peliculas: 0
     }
 ]
 export interface Character {
@@ -273,5 +303,77 @@ export const Characters: Character[] = [
         animeId: 7,
         face: "https://i.pinimg.com/736x/60/08/85/600885c818ae1aefb75eb88a04d2ef45.jpg",
         name: "Jinpachi Ego",
+    },
+    {
+        id: 32,
+        animeId: 8,
+        face: "https://static.wikia.nocookie.net/given/images/3/31/Ritsuka_%28animaci%C3%B3n%29.png/revision/latest?cb=20200823192451&path-prefix=es",
+        name: "Ritsuka Uenoyama",
+    },
+    {
+        id: 33,
+        animeId: 8,
+        face: "https://static.wikia.nocookie.net/given/images/2/24/Mafuyu_%28animaci%C3%B3n%29.png/revision/latest?cb=20200912142232&path-prefix=es",
+        name: "Mafuyu Sato",
+    },
+    {
+        id: 34,
+        animeId: 8,
+        face: "https://static.wikia.nocookie.net/given/images/6/6c/Haruki_%28animaci%C3%B3n%29.jpg/revision/latest?cb=20200907233601&path-prefix=es",
+        name: "Haruki Nakayama",
+    },
+    {
+        id: 35,
+        animeId: 8,
+        face: "https://pm1.aminoapps.com/7747/000d8f594f3a9ce92b69cb64a737c2d562b4b691r1-350-490v2_00.jpg",
+        name: "Akihiko",
+    },
+    {
+        id: 36,
+        animeId: 9,
+        face: "https://static.wikia.nocookie.net/haikyuu/images/c/c2/Rostro_de_Hinata.png/revision/latest?cb=20160210050706&path-prefix=es",
+        name: "Shōyō Hinata",
+    },
+    {
+        id: 37,
+        animeId: 9,
+        face: "https://boo-prod.b-cdn.net/database/profiles/16967663630137d37692c68b0f2505a35898dbdcc222b.jpg",
+        name: "Tobio Kageyama",
+    },
+    {
+        id: 38,
+        animeId: 9,
+        face: "https://i.pinimg.com/736x/72/2f/7c/722f7c6f3c27b3757e240f31e270c844.jpg",
+        name: "Kei Tsukishima",
+    },
+    {
+        id: 39,
+        animeId: 9,
+        face: "https://i.pinimg.com/474x/d5/f3/c6/d5f3c6aa4636d1222c5bc6fb7983c0fd.jpg",
+        name: "Toru Oikawa",
+    },
+    {
+        id: 40,
+        animeId: 10,
+        face: "https://www.animeunited.com.br/oomtumtu/2023/12/portada_sousou-no-frieren-37.jpg",
+        name: "Frieren",
+    },
+    {
+        id: 41,
+        animeId: 10,
+        face: "https://i.pinimg.com/originals/cf/11/6b/cf116bb27dc06def2a72d397f2e054ed.jpg",
+        name: "Fern",
+    },
+    {
+        id: 42,
+        animeId: 10,
+        face: "https://i.pinimg.com/736x/28/36/b4/2836b44460ce9642ba263290acea71dc.jpg",
+        name: "Himmel",
+    },
+    {
+        id: 43,
+        animeId: 10,
+        face: "https://cdn.oneesports.gg/cdn-data/2024/03/How_old_is_Stark_Frieren_A_Journeys_End_Anime.jpg",
+        name: "Stark",
     }
 ]
