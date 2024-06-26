@@ -11,7 +11,7 @@ const endpoints = Object.entries(category)
 			<h4 class="font-bold text-3xl text-white">EndPoint to Get All Anime on the DB</h4>
             <p class="text-white font-bold text-md text-pretty text-center">If you go to this EndPoint you will get All the Animes on this Site DataBase, however, in order to filter the results by category, you can use the Parameter  <code> category</code></p>
             <p class="text-white font-bold text-md text-pretty text-center">In the Category Parameter you can use any of the following</p>
-            <ul style={{scrollbarWidth: "none"}} class="w-10/12 h-24 overflow-auto flex flex-col items-start">
+            <ul style={{scrollbarWidth: "thin"}} class="w-10/12 h-24 overflow-auto flex flex-col items-start">
                 {
                     endpoints.map(end => 
                         <a target="_blank" href={`/api/animes.json?category=${end[1]}`}>

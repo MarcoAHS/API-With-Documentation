@@ -9,7 +9,7 @@ import { Animes } from '../data/data';
 		<main class="w-8/12 flex flex-col items-center gap-6">
 			<h4 class="font-bold text-3xl text-white">EndPoint to Get an Specific Anime with its Characters</h4>
             <p class="text-white font-bold text-md text-pretty text-center">This Endpoint works with the DB animeId, so in order to make it easy you can just click on one of the animes below, and it will automaticaly redirect you to the appropriate Endpoint</p>
-            <ul style={{scrollbarWidth: "none"}} class="w-10/12 h-24 overflow-auto flex flex-col items-start">
+            <ul style={{scrollbarWidth: "thin"}} class="w-10/12 h-24 overflow-auto flex flex-col items-start">
                 {
                     Animes.map(anime => 
                         <a target="_blank" href={`/api/animeAndCharacters.json?animeId=${anime.id}`}>
